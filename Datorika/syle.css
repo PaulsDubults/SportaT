@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.main-width{
+    width: 1400px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(#f5dca8,70%, hsl(195, 83%, 52%));
+    position: relative;
+}
+.hero header .logo h2 a{
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+.hero header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 30px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+    border-bottom: 2px solid white;
+}
+nav ul li.active a{
+    background: transparent;
+    color: white;
+    border: 1px solid #f5dca8;
+    padding: 9px 20px;
+    border-radius: 20px;
+    line-height: 0.5;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+nav ul li.active:hover a{
+    border: 1px solid white;
+    color: lightblue;
+    background: white;
+    transition: 0.4s;
+}
+.content{
+    padding-top: 140px;
+}
+.content .main-text{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+.content .main-text h6{
+    font-size: 16px;
+    font-weight: 450;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.content .main-text h1{
+    font-size: 60px;
+    line-height: 1;
+    color: white;
+    margin: 0px 0px 45px;
+    font-family: 'Poppins', sans-serif;
+}
+.content .main-text a{
+    display: inline-block;
+    text-decoration: none;
+    color: lightblue;
+    background: white;
+    border: 1px solid white;
+    padding: 9px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.content .main-text a:hover{
+    transform: scale(1.2);
+    border: 1px solid #f5dca8;
+    background: transparent;
+    color: white;
+    transition: 0.4s;
+}
+.images{
+    border: 5px solid lightblue;
+    position: relative;
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    bottom: 0;
+    right: 0;
+    text-align: left;
+}
